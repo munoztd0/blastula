@@ -34,6 +34,7 @@ blastula_template <- function(html_body,
         # derived from https://github.com/TedGoas/Cerberus
         htmltools::includeHTML(system.file(package = "blastula", "cerberus-meta.html")),
         tags$title(title),
+        tags$link(rel = "stylesheet", type = "text/css", href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"),
         tags$style(HTML(paste0("
 body {
   font-family: ", font_family, ";
